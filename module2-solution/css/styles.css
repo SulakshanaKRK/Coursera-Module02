@@ -1,0 +1,89 @@
+h1{
+    text-align: center;
+}
+
+h1{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+div{
+    display: block;
+}
+
+.container{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section{
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 15px;
+    position: relative;
+    background-color: #dcdcdc;
+}
+
+.section:nth-child(1) .title {
+    background-color: #ddc252;
+}
+
+.section:nth-child(2) .title {
+    background-color: #ff7f7f;
+}
+
+.section:nth-child(3) .title {
+    background-color: #7bc342;
+}
+
+.title  {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    border: 1px solid black;
+    color: white;
+}
+
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+@media screen and (min-width: 992px)    {
+    .section {
+        width: 30%;
+    }
+
+}
+
+@media screen and (min-width: 768px )  and (max-width: 991px)   {
+    .section:nth-child(1)  {
+        width: 46%;
+    }
+
+    .section:nth-child(2)  {
+        width: 46%;
+    }
+
+    .section:nth-child(3)  {
+        width: 100%;
+    }
+
+}
